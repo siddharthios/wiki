@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31C7EF46C7AE3309B2DAE844 /* Pods_wiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5FD48D18F7A21F5B029E6F /* Pods_wiki.framework */; };
 		35C2450020E0069000B5563C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C244FF20E0069000B5563C /* AppDelegate.swift */; };
 		35C2450220E0069000B5563C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2450120E0069000B5563C /* ViewController.swift */; };
 		35C2450520E0069100B5563C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C2450320E0069100B5563C /* Main.storyboard */; };
 		35C2450720E0069100B5563C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C2450620E0069100B5563C /* Assets.xcassets */; };
 		35C2450A20E0069100B5563C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C2450820E0069100B5563C /* LaunchScreen.storyboard */; };
+		35C2451220E00B6A00B5563C /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2451120E00B6A00B5563C /* GridCell.swift */; };
+		35C2451420E00BA700B5563C /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2451320E00BA700B5563C /* GridLayout.swift */; };
+		35C2451620E00BCA00B5563C /* wikiSearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2451520E00BCA00B5563C /* wikiSearchDataModel.swift */; };
+		35C2451820E0D7EB00B5563C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2451720E0D7EB00B5563C /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5FD48D18F7A21F5B029E6F /* Pods_wiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C244FC20E0069000B5563C /* wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C244FF20E0069000B5563C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C2450120E0069000B5563C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		35C2450620E0069100B5563C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35C2450920E0069100B5563C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35C2450B20E0069100B5563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C2451120E00B6A00B5563C /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		35C2451320E00BA700B5563C /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		35C2451520E00BCA00B5563C /* wikiSearchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiSearchDataModel.swift; sourceTree = "<group>"; };
+		35C2451720E0D7EB00B5563C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A815C022B8F1B37FC5E9E3B1 /* Pods-wiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.release.xcconfig"; sourceTree = "<group>"; };
+		C4725CB8E467B8D449CD5699 /* Pods-wiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wiki/Pods-wiki.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C7EF46C7AE3309B2DAE844 /* Pods_wiki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC6227A0F1E224EB740D381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4725CB8E467B8D449CD5699 /* Pods-wiki.debug.xcconfig */,
+				A815C022B8F1B37FC5E9E3B1 /* Pods-wiki.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		10E002C9A7ECA5D2C78832C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B5FD48D18F7A21F5B029E6F /* Pods_wiki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35C244F320E0069000B5563C = {
 			isa = PBXGroup;
 			children = (
 				35C244FE20E0069000B5563C /* wiki */,
 				35C244FD20E0069000B5563C /* Products */,
+				0EC6227A0F1E224EB740D381 /* Pods */,
+				10E002C9A7ECA5D2C78832C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,10 @@
 			children = (
 				35C244FF20E0069000B5563C /* AppDelegate.swift */,
 				35C2450120E0069000B5563C /* ViewController.swift */,
+				35C2451720E0D7EB00B5563C /* WebViewController.swift */,
+				35C2451120E00B6A00B5563C /* GridCell.swift */,
+				35C2451320E00BA700B5563C /* GridLayout.swift */,
+				35C2451520E00BCA00B5563C /* wikiSearchDataModel.swift */,
 				35C2450320E0069100B5563C /* Main.storyboard */,
 				35C2450620E0069100B5563C /* Assets.xcassets */,
 				35C2450820E0069100B5563C /* LaunchScreen.storyboard */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35C2450E20E0069100B5563C /* Build configuration list for PBXNativeTarget "wiki" */;
 			buildPhases = (
+				AE7045AD9FAFD38281D665E9 /* [CP] Check Pods Manifest.lock */,
 				35C244F820E0069000B5563C /* Sources */,
 				35C244F920E0069000B5563C /* Frameworks */,
 				35C244FA20E0069000B5563C /* Resources */,
+				6C2DA128FD2AC34203A852F4 /* [CP] Embed Pods Frameworks */,
+				A1E491AEE7C585F9EBE8602C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +170,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C2DA128FD2AC34203A852F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wiki/Pods-wiki-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wiki/Pods-wiki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E491AEE7C585F9EBE8602C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wiki/Pods-wiki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7045AD9FAFD38281D665E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wiki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35C244F820E0069000B5563C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				35C2450220E0069000B5563C /* ViewController.swift in Sources */,
+				35C2451820E0D7EB00B5563C /* WebViewController.swift in Sources */,
 				35C2450020E0069000B5563C /* AppDelegate.swift in Sources */,
+				35C2451220E00B6A00B5563C /* GridCell.swift in Sources */,
+				35C2451420E00BA700B5563C /* GridLayout.swift in Sources */,
+				35C2451620E00BCA00B5563C /* wikiSearchDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +371,13 @@
 		};
 		35C2450F20E0069100B5563C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4725CB8E467B8D449CD5699 /* Pods-wiki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F65GNDYW8;
 				INFOPLIST_FILE = wiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = siddharth.kumar.wiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +388,13 @@
 		};
 		35C2451020E0069100B5563C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A815C022B8F1B37FC5E9E3B1 /* Pods-wiki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F65GNDYW8;
 				INFOPLIST_FILE = wiki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = siddharth.kumar.wiki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
